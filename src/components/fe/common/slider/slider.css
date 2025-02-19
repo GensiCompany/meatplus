@@ -1,0 +1,36 @@
+.flex{
+    display: flex !important;
+}
+
+img{
+    width: 100%;
+}
+.ant-carousel .slick-dots li{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    border:3px solid var(--primary);
+    opacity: .5;
+}
+
+.ant-carousel .slick-dots li.slick-active{
+    width: 7px;
+    height: 7px;
+    opacity: 1;
+    background-color: var(--primary);
+}
+
+.ant-carousel .slick-dots li:after,
+.ant-carousel .slick-dots li button:after{
+    content: none !important;
+}
+
+.ant-carousel .slick-dots li button{
+    opacity: 0 !important;
+}
+.slick-arrow .slick-next:hover,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-prev:hover{
+    color:var(--yellow) !important;
+}

@@ -1,0 +1,14 @@
+.container{
+    display: none;
+}
+
+.slider{
+    width: calc(100% - 370px);
+    max-width: 600px;
+}
+
+@media (min-width: 768px) {
+    .container{
+        display: flex;
+    }
+}

@@ -1,0 +1,12 @@
+.container{
+
+}
+.container .ant-drawer-right>.ant-drawer-content-wrapper{
+    background-color:rgb(255 255 255 / 74%) !important;
+}
+
+@media (min-width: 780px) {
+    .container{
+        display: none;
+    }
+}

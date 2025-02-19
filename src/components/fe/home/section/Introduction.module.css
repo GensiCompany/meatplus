@@ -1,0 +1,27 @@
+.title{
+    color: var(--primary);
+    font-size: 54px;
+    font-family: var(--font-myriad-pro);
+    line-height: 83.2px;
+}
+
+.content{
+    color: #777;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+.pass{
+    color: #777;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+.phone{
+    font-weight: 700;
+    color: #ed1c24;
+}
+@media (min-width: 480px) {
+    .title{
+        margin-top: 0;
+    }
+}

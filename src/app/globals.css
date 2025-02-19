@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary:#AC1E21;
+  --yellow:#f9e20a;
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1440px;
+
+  --font-myriad-pro: 'MyriadPro', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.ant-drawer .ant-drawer-content {
+  background-color:rgb(255 255 255 / 74%) !important;
+}
+.ant-drawer .ant-drawer-header{
+  padding:3px 0 !important;
+}
+.anticon{
+  font-size: 20px!important;
+}
+.ant-drawer .ant-drawer-body{
+  padding: 0;
+}
+.ant-drawer-header-title{
+  justify-content: end;
+}
+.ant-drawer-close{
+  margin-inline-end: 0!important;
+  width: 40px!important;
+  height: 40px!important;
+}
+
+.ant-drawer-body .ant-menu-light.ant-menu-root.ant-menu-inline{
+  background-color: transparent !important;
+}
+
+.promo-title{
+  font-family: var(--font-myriad-pro);
+  color: var(--primary);
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.lienHeSlider{
+ display: flex !important;
+  gap: 10px;
+}
+
+.fixed-header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 70px !important;
+  transition: all 0.3s ease-in-out;
+  animation: stuckMoveDown .6s;
+}
+
+.big_logo{
+  max-height: 140px !important;
+}
+
+.homeSection{
+  opacity: 0;
+  animation-fill-mode: forwards;
+  -webkit-backface-visibility: hidden;
+  transition: filter 1.3s, transform 1.6s, opacity .7s ease-in;
+  will-change: filter, transform, opacity;
+}
+.homeSection.LEFT_TO_RIGHT{
+  transform: translate3d(-70px, 0, 0);
+}
+
+.homeSection.RIGHT_TO_LEFT{
+  transform: translate3d(70px, 0, 0);
+}
+
+.homeSection.BOTTOM_TO_TOP{
+  transform: translate3d(0, 70px, 0);
+}
+
+.homeSection.TOP_TO_BOTTOM{
+  transform: translate3d(0, -70px, 0);
+}
+
+.homeSection.APPEAR {
+  animation-delay: .1s;
+  opacity: 1 !important;
+  transform: translateZ(0) scale(1);
+}
+
+.location .slick-list {margin: 0 -5px;}
+.location .slick-slide>div {padding: 0 5px;}
+
+.dropdown{
+  transition: all .3s ease-in-out;
+}
+
+.headerNav_child1:hover > .dropdown{
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes stuckMoveDown {
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.padding-h{
+  width: 100%;
+  height: 106px;
+}
+.carousel-lien-he .slick-slide .lien-he-item{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .22);
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: -9px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 9px solid white;
+}
+
+.ant-table-row-expand-icon{
+  display: none !important;
+}
+
+.slick-dots li {
+  background-color: transparent !important;
+  border: 2px solid var(--primary) !important;
+  border-radius: 50% !important;
+  width: 15px !important;
+  height: 15px !important;
+  padding: 2px !important;
+}
+
+.slick-dots li.slick-active {
+  background-color: var(--primary) !important;
+}
+
+.slick-dots li button::before {
+  display: none;
+}
+
+@media (min-width: 1124px) {
+
+  .carousel-lien-he .slick-track {
+    padding: 20px 0px;
+  }
+
+  .carousel-lien-he .slick-slide {
+    opacity: .5;
+    transition: all .3s ease-in-out;
+  }
+
+  .carousel-lien-he .slick-slide{
+    width: calc(330px * 3 + 20px);
+  }
+
+  .carousel-lien-he .slick-slide.slick-center,
+  .carousel-lien-he .slick-slide.slick-active.slick-center{
+    width: 52vw;
+  }
+
+  .carousel-lien-he .slick-slide .lien-he-image{
+    height: 330px;
+  }
+  .carousel-lien-he .slick-slide.slick-center .lien-he-image,
+  .carousel-lien-he .slick-slide.slick-active.slick-center .lien-he-image{
+    height: 360px;
+  }
+
+  .carousel-lien-he .slick-slide.slick-center{
+    opacity: 1;
+  }
+
+  .carousel-lien-he .slick-slide.slick-active.slick-center{
+    opacity: 1;
+  }
+
+}

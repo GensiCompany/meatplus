@@ -1,0 +1,23 @@
+.otherNewsTitle{
+    width: calc(100% - 55px);
+}
+
+.latestNews{
+    padding: 15px 0;
+}
+
+.latestNews:not(:last-child){
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.shareContainer{
+    width: 35px !important;
+    height: 35px !important;
+    border: 1px solid #c0c0c0 !important;
+    color:#c0c0c0;
+    cursor: pointer;
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

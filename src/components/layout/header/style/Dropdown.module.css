@@ -1,0 +1,28 @@
+.title{
+    font-weight: 700;
+    color: hsla(0,0%,7%,.85);
+    white-space: nowrap;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+.item{
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+}
+.title:hover,
+.item:hover{
+    background-color: rgba(0,0,0,.03);
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #007bff;
+}

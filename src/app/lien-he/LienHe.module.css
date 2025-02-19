@@ -1,0 +1,60 @@
+.line{
+    background-color: #555;
+    opacity: .1;
+    height: 2px;
+    flex: 1;
+}
+
+.title{
+    color: var(--primary);
+    text-align: center;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.carouselItem{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.location{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.active{
+
+}
+.iframeContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.iframeContainer iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.location:hover,
+.location.active{
+    background-color: rgb(230, 230, 230);
+}
+
+.point{
+    transition: all .3s ease-in-out;
+}
+.point:hover{
+    color: black;
+}
+@media (max-width: 638px) {
+    .carouselItem{
+        box-shadow: none;
+    }
+
+    .text{
+        width: calc(100% - 130px);
+    }
+}

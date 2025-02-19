@@ -1,0 +1,75 @@
+.header{
+    width: 100%;
+    background-color: var(--primary);
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img{
+    position: absolute;
+    max-height: 70px;
+    width: auto;
+    transition: all .3s ease-in-out;
+}
+
+.navLink{
+    font-size: 18px;
+    color: white;
+    margin: 0 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.navLink:hover{
+    color:var(--yellow);
+}
+
+.navLink:first-child{
+    margin-left: 0;
+}
+
+.activeNavLink{
+    color:var(--yellow);
+}
+
+.booking{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.booking:hover{
+    background-color: var(--yellow);
+    color: black;
+    border-color: var(--yellow);
+}
+
+@media (min-width: 480px) {
+    .header img{
+        max-height: 106px;
+        position: relative;
+        top: 4px;
+        z-index: 10;
+    }
+    .header{
+        height: 106px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header img{
+        max-height: 127px;
+    }
+}
